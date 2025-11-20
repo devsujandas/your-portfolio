@@ -111,42 +111,54 @@ export default function Work() {
         </section>
 
         {/* Projects Grid */}
-        <section className="px-4 sm:px-6 lg:px-8">
-          <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {filteredProjects.map((project, idx) => (
-                <motion.div
-                  key={project.id}
-                  layout
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: idx * 0.05 }}
-                  className="group cursor-pointer"
-                >
-                  <Link href={`/case-study/${project.id}`} className="space-y-4 block">
-                    <div className="relative overflow-hidden rounded-lg bg-muted h-64">
-                      <img
-                        src={project.image || "/placeholder.svg"}
-                        alt={project.title}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <div className="flex justify-between items-start">
-                        <div>
-                          <p className="text-xs text-accent font-medium">{project.category}</p>
-                          <h3 className="text-lg font-bold group-hover:text-accent transition">{project.title}</h3>
-                        </div>
-                        <span className="text-xs text-muted-foreground">{project.year}</span>
-                      </div>
-                      <p className="text-sm text-muted-foreground">{project.description}</p>
-                    </div>
-                  </Link>
-                </motion.div>
-              ))}
+<section className="px-4 sm:px-6 lg:px-8">
+  <div className="max-w-7xl mx-auto">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {filteredProjects.map((project, idx) => (
+        <motion.div
+          key={project.id}
+          layout
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: idx * 0.05 }}
+          className="group cursor-pointer"
+        >
+          <Link href={`/case-study/${project.id}`} className="space-y-4 block">
+            
+            <div className="relative overflow-hidden rounded-lg bg-muted aspect-[3/2]">
+              <img
+                src={project.image || "/placeholder.svg"}
+                alt={project.title}
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+              />
             </div>
-          </div>
-        </section>
+
+            <div className="space-y-2">
+              <div className="flex justify-between items-start">
+                <div>
+                  <p className="text-xs text-accent font-medium">
+                    {project.category}
+                  </p>
+                  <h3 className="text-lg font-bold group-hover:text-accent transition">
+                    {project.title}
+                  </h3>
+                </div>
+                <span className="text-xs text-muted-foreground">
+                  {project.year}
+                </span>
+              </div>
+              <p className="text-sm text-muted-foreground">
+                {project.description}
+              </p>
+            </div>
+
+          </Link>
+        </motion.div>
+      ))}
+    </div>
+  </div>
+</section>
+
       </main>
       <Footer />
     </>

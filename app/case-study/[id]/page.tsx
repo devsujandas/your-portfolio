@@ -120,7 +120,6 @@ export default function CaseStudy() {
           </div>
         </section>
 
-        {/* Featured Image */}
         <section className="px-4 sm:px-6 lg:px-8 mb-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -128,15 +127,16 @@ export default function CaseStudy() {
             transition={{ duration: 0.8 }}
             className="max-w-6xl mx-auto"
           >
-            <div className="rounded-lg overflow-hidden h-96 md:h-[500px]">
-              <img
-                src={project.image || "/placeholder.svg"}
-                alt={project.title}
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </motion.div>
+          <div className="rounded-lg overflow-hidden aspect-[16/9]">
+          <img
+            src={project.image || "/placeholder.svg"}
+            alt={project.title}
+            className="w-full h-full object-cover"
+          />
+          </div>
+        </motion.div>
         </section>
+
 
         {/* Content */}
         <section className="px-4 sm:px-6 lg:px-8 mb-20">
