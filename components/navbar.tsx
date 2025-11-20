@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { motion, AnimatePresence } from "framer-motion"
 import { useState, useEffect } from "react"
-import { FiHome, FiUser, FiBriefcase, FiSettings, FiMail, FiFileText } from "react-icons/fi"
+import { FiHome, FiUser, FiBriefcase, FiLayers , FiMail, FiFileText } from "react-icons/fi"
 import { ThemeToggle } from "./theme-toggle"
 
 function useIsTabletOrMobile() {
@@ -34,12 +34,11 @@ export function Navbar() {
     { name: "Home", href: "/", icon: FiHome },
     { name: "About", href: "/about", icon: FiUser },
     { name: "Work", href: "/work", icon: FiBriefcase },
-    { name: "Services", href: "/services", icon: FiSettings },
+    { name: "Services", href: "/services", icon: FiLayers  },
     { name: "Blog", href: "/blog", icon: FiFileText },
     { name: "Contact", href: "/contact", icon: FiMail },
   ]
 
-  // DESKTOP NAVBAR (unchanged)
   if (!isSmallScreen) {
     return (
       <motion.nav
@@ -84,26 +83,20 @@ export function Navbar() {
     )
   }
 
-  // MOBILE NAVBAR WITH 2-LINE UNIQUE MENU
   return (
     <>
-      {/* Top bar */}
       <motion.nav
         className="fixed top-0 left-0 right-0 h-16 flex items-center justify-between px-4 bg-background/70 backdrop-blur-xl border-b border-border/40 z-50"
         initial={{ y: -40 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.4 }}
       >
-        {/* NEW UNIQUE 2-LINE BUTTON */}
         <button onClick={() => setOpen(!open)} className="relative w-12 h-12 flex items-center justify-center">
-          {/* Long Line */}
           <motion.span
             className="absolute h-[3px] w-7 rounded-full bg-muted-foreground"
             animate={open ? { rotate: 45, y: 4, width: "28px" } : { rotate: 0, y: -4, width: "30px" }}
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
           />
-
-          {/* Small Line */}
           <motion.span
             className="absolute h-[3px] w-5 rounded-full bg-muted-foreground"
             animate={open ? { rotate: -45, y: -4, width: "28px" } : { rotate: 0, y: 6, width: "20px" }}
@@ -114,7 +107,6 @@ export function Navbar() {
         <ThemeToggle />
       </motion.nav>
 
-      {/* FLOATING MENU PANEL */}
       <AnimatePresence>
         {open && (
           <motion.div
