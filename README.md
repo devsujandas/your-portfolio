@@ -21,11 +21,23 @@
 
 ---
 
-##  Preview  
+## 🖼️ Preview  
 
-![Preview 1](./public/images/preview1.png)
-![Preview 2](./public/images/preview2.png)
+<p align="center">
+  <img 
+    src="./public/images/preview1.png" 
+    width="85%" 
+    alt="Preview 1"
+  />
+</p>
 
+<p align="center">
+  <img 
+    src="./public/images/preview2.png" 
+    width="85%" 
+    alt="Preview 2"
+  />
+</p>
 
 ---
 
