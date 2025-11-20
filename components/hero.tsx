@@ -1,6 +1,6 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { motion, easeOut } from "framer-motion"  
 import Link from "next/link"
 import { FaXTwitter, FaGithub, FaLinkedin, FaInstagram, FaDribbble, FaEnvelope } from "react-icons/fa6"
 
@@ -20,7 +20,7 @@ const itemVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.7, ease: "easeOut" },
+    transition: { duration: 0.7, ease: easeOut },  
   },
 }
 
@@ -49,14 +49,13 @@ export function Hero() {
             className="lg:col-span-2 bg-card border border-border rounded-3xl p-8 md:p-12 shadow-sm hover:shadow-md transition duration-300"
           >
             <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center">
-              {/* BIG FULL-WIDTH IMAGE ON MOBILE */}
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="w-full h-60 sm:h-72 md:w-48 md:h-48 rounded-2xl bg-gradient-to-br from-secondary to-accent overflow-hidden shadow-lg flex-shrink-0"
               >
-                <img src="/professional-portrait-designer.jpg" alt="Profile" className="w-full h-full object-cover" />
+                <img src="/profile.jpeg" alt="Profile" className="w-full h-full object-cover" />
               </motion.div>
 
               {/* Hero Content */}

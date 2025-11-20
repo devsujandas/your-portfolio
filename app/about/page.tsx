@@ -67,7 +67,7 @@ export default function About() {
             >
               <div className="bg-muted rounded-lg h-96 overflow-hidden">
                 <img
-                  src="/professional-designer-portrait.png"
+                  src="/about.jpeg"
                   alt="Designer portrait"
                   className="w-full h-full object-cover"
                 />

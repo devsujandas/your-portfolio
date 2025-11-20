@@ -5,13 +5,13 @@ import { Analytics } from "@vercel/analytics/next"
 import { ThemeProviderWrapper } from "@/components/theme-provider"
 import "./globals.css"
 
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
+const geist = Geist({ subsets: ["latin"] })
+const geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Portfolio - Sujan",
   description: "Creative UI/UX Designer & Product Designer - Crafting beautiful digital experiences",
-  generator: "v0.app",
+  authors: [{ name: "Sujan Das", url: "https://github.com/devsujandas" }],
   viewport: {
     width: "device-width",
     initialScale: 1,
@@ -19,22 +19,25 @@ export const metadata: Metadata = {
     userScalable: true,
   },
   icons: {
-    icon: "/favicon.jpeg",
-    apple: "/favicon.jpeg",
+    icon: "/favicon.png",
+    apple: "/favicon.png",
   },
 }
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode
-}>) {
+}) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, viewport-fit=cover"
+        />
 
-        {/* Input zoom prevent (iOS requires 16px min) */}
+        {/* Mobile input zoom fix */}
         <style>{`
           * {
             -webkit-text-size-adjust: 100%;
@@ -43,19 +46,17 @@ export default function RootLayout({
           input, textarea, select {
             font-size: 16px !important;
           }
-          input:focus, textarea:focus, select:focus {
-            font-size: 16px !important;
-          }
         `}</style>
       </head>
 
-      <body className={`font-sans antialiased`}>
+      <body className={`${geist.className} ${geistMono.className} antialiased`}>
         <ThemeProviderWrapper>
-          <div className="flex">
-            <div className="hidden md:block md:w-20 md:flex-shrink-0" />
-            <div className="flex-1 flex flex-col min-h-screen">{children}</div>
+          <div className="flex min-h-screen">
+            <div className="hidden md:block md:w-20 flex-shrink-0" />
+            <main className="flex-1 flex flex-col">{children}</main>
           </div>
         </ThemeProviderWrapper>
+
         <Analytics />
       </body>
     </html>
