@@ -17,13 +17,15 @@
 
 ##  Live Demo
 
-🔗 **Portfolio Website**: [https://sujandas.info](https://sujandas.info)
+🔗 **Portfolio Website**: [https://portfolio.sujandas.info](https://portfolio.sujandas.info/)
 
 ---
 
-##  Preview
+##  Preview  
 
-![Portfolio Preview](./public/images/preview.png)
+![Preview 1](./public/images/preview1.png)
+![Preview 2](./public/images/preview2.png)
+
 
 ---
 
