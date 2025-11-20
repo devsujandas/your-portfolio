@@ -55,7 +55,7 @@ export function Hero() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="w-full h-60 sm:h-72 md:w-48 md:h-48 rounded-2xl bg-gradient-to-br from-secondary to-accent overflow-hidden shadow-lg flex-shrink-0"
               >
-                <img src="/profile.jpeg" alt="Profile" className="w-full h-full object-cover" />
+                <img src="/images/profile.jpeg" alt="Profile" className="w-full h-full object-cover" />
               </motion.div>
 
               {/* Hero Content */}
