@@ -44,14 +44,17 @@ export function FeaturedProjects() {
               className="group cursor-pointer"
             >
               <Link href={`/case-study/${project.id}`} className="block h-full">
-                <div className="relative overflow-hidden rounded-2xl bg-muted h-72 mb-6 shadow-md hover:shadow-lg transition duration-300">
+                <div className="relative overflow-hidden rounded-2xl bg-muted mb-6 shadow-md hover:shadow-lg transition duration-300 aspect-[3/2]">
                   <img
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
-                <h3 className="text-xl font-bold hover:text-secondary transition duration-300">{project.title}</h3>
+
+                <h3 className="text-xl font-bold hover:text-secondary transition duration-300">
+                  {project.title}
+                </h3>
               </Link>
             </motion.div>
           ))}
