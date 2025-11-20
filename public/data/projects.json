@@ -1,0 +1,88 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Financial Dashboard",
+      "category": "ui-ux",
+      "description": "Complete redesign of financial management dashboard",
+      "image": "/modern-financial-dashboard-interface.jpg",
+      "year": "2024",
+      "client": "FinTech Corp",
+      "role": "Lead Product Designer",
+      "timeline": "3 months",
+      "tools": ["Figma", "Adobe XD", "Protopie", "UserTesting"],
+      "problem": "The existing financial dashboard was outdated, difficult to navigate, and lacked real-time data visualization capabilities. Users struggled to find key financial metrics and make informed decisions quickly.",
+      "solution": "We redesigned the entire dashboard with modern UI patterns, improved information hierarchy, and interactive data visualizations. The new design reduced user friction and increased engagement by 45%."
+    },
+    {
+      "id": 2,
+      "title": "E-commerce Platform",
+      "category": "product",
+      "description": "End-to-end product design for online store",
+      "image": "/ecommerce-website-design.png",
+      "year": "2024",
+      "client": "RetailCo",
+      "role": "Senior Product Designer",
+      "timeline": "4 months",
+      "tools": ["Figma", "Adobe XD", "Analytics"],
+      "problem": "High cart abandonment rate (68%) and confusing checkout process. Users complained about difficulty finding products and completing purchases.",
+      "solution": "Streamlined the entire shopping flow, improved search functionality, and simplified checkout. Result: 25% reduction in abandonment rate and 35% increase in conversions."
+    },
+    {
+      "id": 3,
+      "title": "Mobile Banking App",
+      "category": "mobile",
+      "description": "Mobile-first design for banking application",
+      "image": "/mobile-banking-app-design.jpg",
+      "year": "2023",
+      "client": "BankTech",
+      "role": "Product Designer",
+      "timeline": "5 months",
+      "tools": ["Figma", "Sketch", "Protopie"],
+      "problem": "Need for a modern mobile banking app that emphasizes security, ease of use, and accessibility for diverse user groups.",
+      "solution": "Created an intuitive mobile-first design focusing on key banking tasks, security features, and accessibility standards. App gained 100k+ downloads in first month."
+    },
+    {
+      "id": 4,
+      "title": "SaaS Dashboard",
+      "category": "web",
+      "description": "Website redesign for productivity tool",
+      "image": "/placeholder.svg?height=400&width=600",
+      "year": "2023",
+      "client": "ProductCo",
+      "role": "Lead Designer",
+      "timeline": "3 months",
+      "tools": ["Figma", "Protopie", "UserTesting"],
+      "problem": "Complex SaaS interface overwhelming users with cluttered navigation and poor information hierarchy.",
+      "solution": "Redesigned with cleaner UI, improved dashboard layout, and streamlined workflows. User satisfaction increased by 60% post-launch."
+    },
+    {
+      "id": 5,
+      "title": "Health & Wellness App",
+      "category": "mobile",
+      "description": "Fitness tracking application design",
+      "image": "/placeholder.svg?height=400&width=600",
+      "year": "2023",
+      "client": "FitnessCo",
+      "role": "Product Designer",
+      "timeline": "4 months",
+      "tools": ["Figma", "Adobe XD", "Firebase"],
+      "problem": "Need an engaging fitness app that motivates users and makes tracking workouts intuitive and fun.",
+      "solution": "Created gamified workout tracking with social features and progress visualization. App achieved 4.8-star rating with 50k+ active users."
+    },
+    {
+      "id": 6,
+      "title": "Travel Booking Platform",
+      "category": "product",
+      "description": "Redesigned travel booking experience",
+      "image": "/placeholder.svg?height=400&width=600",
+      "year": "2022",
+      "client": "TravelCo",
+      "role": "Senior UX Designer",
+      "timeline": "5 months",
+      "tools": ["Figma", "Adobe XD", "Sketch"],
+      "problem": "Complex booking flow with high abandonment rate and confusing filter options for travelers.",
+      "solution": "Implemented smart filters, personalized recommendations, and simplified booking flow. Conversions increased by 40% within first quarter."
+    }
+  ]
+}

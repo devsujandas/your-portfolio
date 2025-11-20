@@ -1,0 +1,52 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "title": "UI/UX Design",
+      "description": "Comprehensive design solutions that combine beautiful aesthetics with user-centered functionality.",
+      "features": ["User Research", "Wireframing", "Prototyping", "User Testing"],
+      "price": "Starting at  ₹2000",
+      "icon": "FaPalette"
+    },
+    {
+      "id": 2,
+      "title": "Product Design",
+      "description": "End-to-end product strategy and design from concept to launch.",
+      "features": ["Strategy", "Design Systems", "Implementation", "Analytics"],
+      "price": "Starting at  ₹5000",
+      "icon": "FaCube"
+    },
+    {
+      "id": 3,
+      "title": "Web Design",
+      "description": "Modern, responsive web designs that convert visitors into customers.",
+      "features": ["Responsive Design", "E-commerce Solutions", "CMS Integration", "Performance"],
+      "price": "Starting at  ₹3000",
+      "icon": "IoGlobe"
+    },
+    {
+      "id": 4,
+      "title": "Mobile App Design",
+      "description": "Intuitive mobile-first designs for iOS and Android platforms.",
+      "features": ["Mobile UX", "Native Design", "Platform Guidelines", "Interaction Design"],
+      "price": "Starting at  ₹4000",
+      "icon": "FaMobileScreen"
+    },
+    {
+      "id": 5,
+      "title": "Design System",
+      "description": "Create scalable, maintainable design systems for growing teams.",
+      "features": ["Component Library", "Design Tokens", "Documentation", "Handoff"],
+      "price": "Starting at  ₹6000",
+      "icon": "IoSettings"
+    },
+    {
+      "id": 6,
+      "title": "Consultation",
+      "description": "Strategic design consultation and audit of existing products.",
+      "features": ["Audit & Analysis", "Recommendations", "Roadmap", "Training"],
+      "price": " ₹150/hour",
+      "icon": "FaBriefcase"
+    }
+  ]
+}
