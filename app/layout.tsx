@@ -66,9 +66,7 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         <ThemeProviderWrapper>
           <div className="flex min-h-screen">
-            {/* Left spacer for sidebar / navbar on desktop */}
             <div className="hidden md:block md:w-20 md:flex-shrink-0" />
-            {/* Main content */}
             <div className="flex-1 flex flex-col">{children}</div>
           </div>
         </ThemeProviderWrapper>

@@ -59,7 +59,6 @@ export default function About() {
         {/* About Content */}
         <section className="px-4 sm:px-6 lg:px-8 mb-20">
           <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
-            {/* Image */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
