@@ -8,6 +8,7 @@ import { motion } from "framer-motion"
 import { FaEnvelope, FaPhone, FaLinkedin, FaGithub, FaXTwitter, FaInstagram } from "react-icons/fa6"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
+import { FiAtSign } from "react-icons/fi"
 
 export default function Contact() {
   const searchParams = useSearchParams()
@@ -80,7 +81,6 @@ export default function Contact() {
         <section className="px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="grid lg:grid-cols-3 gap-12">
-              {/* Contact Form - Spans 2 columns */}
               <motion.div
                 initial={{ opacity: 0, x: -40 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -198,7 +198,7 @@ export default function Contact() {
               >
                 {/* Email Card */}
                 <motion.a
-                  href="mailto:hello@sujan.com"
+                  href="mailto:contact@sujandas.info"
                   whileHover={{ y: -4 }}
                   className="block p-6 bg-card border-2 border-border rounded-2xl hover:border-secondary/50 transition duration-300 hover:shadow-md group"
                 >
@@ -207,13 +207,13 @@ export default function Contact() {
                   </div>
                   <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Email</p>
                   <p className="font-bold text-secondary group-hover:text-secondary/80 transition break-all">
-                    hello@sujan.com
+                    contact@sujandas.info
                   </p>
                 </motion.a>
 
                 {/* Phone Card */}
                 <motion.a
-                  href="tel:+1234567890"
+                  href="tel:+9185098XXXXX"
                   whileHover={{ y: -4 }}
                   className="block p-6 bg-card border-2 border-border rounded-2xl hover:border-secondary/50 transition duration-300 hover:shadow-md group"
                 >
@@ -221,7 +221,7 @@ export default function Contact() {
                     <FaPhone className="w-8 h-8 text-secondary" />
                   </div>
                   <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Phone</p>
-                  <p className="font-bold text-secondary group-hover:text-secondary/80 transition">+1 (234) 567-890</p>
+                  <p className="font-bold text-secondary group-hover:text-secondary/80 transition">+91 85098XXXXX</p>
                 </motion.a>
 
                 {/* Social Links Card */}
@@ -230,7 +230,7 @@ export default function Contact() {
                   className="p-6 bg-card border-2 border-border rounded-2xl hover:border-secondary/50 transition duration-300 hover:shadow-md"
                 >
                   <div className="mb-3">
-                    <FaLinkedin className="w-8 h-8 text-secondary" />
+                    <FiAtSign className="w-8 h-8 text-secondary" />
                   </div>
                   <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-4">Follow</p>
                   <div className="space-y-3 flex flex-col">

@@ -26,8 +26,8 @@ const itemVariants = {
 
 export function Hero() {
   const socialLinks = [
-    { icon: FaXTwitter, label: "Twitter", href: "#" },
     { icon: FaGithub, label: "GitHub", href: "#" },
+    { icon: FaXTwitter, label: "Twitter", href: "#" },
     { icon: FaLinkedin, label: "LinkedIn", href: "#" },
     { icon: FaInstagram, label: "Instagram", href: "#" },
     { icon: FaDribbble, label: "Dribbble", href: "#" },
