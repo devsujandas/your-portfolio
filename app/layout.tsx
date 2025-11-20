@@ -5,13 +5,26 @@ import { Analytics } from "@vercel/analytics/next"
 import { ThemeProviderWrapper } from "@/components/theme-provider"
 import "./globals.css"
 
-const geist = Geist({ subsets: ["latin"] })
-const geistMono = Geist_Mono({ subsets: ["latin"] })
+const geistSans = Geist({
+  subsets: ["latin"],
+  variable: "--font-geist-sans",
+})
+
+const geistMono = Geist_Mono({
+  subsets: ["latin"],
+  variable: "--font-geist-mono",
+})
 
 export const metadata: Metadata = {
   title: "Portfolio - Sujan",
-  description: "Creative UI/UX Designer & Product Designer - Crafting beautiful digital experiences",
-  authors: [{ name: "Sujan Das", url: "https://github.com/devsujandas" }],
+  description:
+    "Creative UI/UX & Product Designer – crafting beautiful digital experiences with modern interfaces.",
+  authors: [
+    {
+      name: "Sujan Das",
+      url: "https://github.com/devsujandas",
+    },
+  ],
   viewport: {
     width: "device-width",
     initialScale: 1,
@@ -26,18 +39,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode
-}) {
+}>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${geistSans.variable} ${geistMono.variable}`}
+    >
       <head>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, viewport-fit=cover"
-        />
-
-        {/* Mobile input zoom fix */}
         <style>{`
           * {
             -webkit-text-size-adjust: 100%;
@@ -46,17 +57,21 @@ export default function RootLayout({
           input, textarea, select {
             font-size: 16px !important;
           }
+          input:focus, textarea:focus, select:focus {
+            font-size: 16px !important;
+          }
         `}</style>
       </head>
 
-      <body className={`${geist.className} ${geistMono.className} antialiased`}>
+      <body className="font-sans antialiased">
         <ThemeProviderWrapper>
           <div className="flex min-h-screen">
-            <div className="hidden md:block md:w-20 flex-shrink-0" />
-            <main className="flex-1 flex flex-col">{children}</main>
+            {/* Left spacer for sidebar / navbar on desktop */}
+            <div className="hidden md:block md:w-20 md:flex-shrink-0" />
+            {/* Main content */}
+            <div className="flex-1 flex flex-col">{children}</div>
           </div>
         </ThemeProviderWrapper>
-
         <Analytics />
       </body>
     </html>
