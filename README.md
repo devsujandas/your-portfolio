@@ -1,193 +1,179 @@
-# Portfolio - Sujan
 
-A modern, responsive portfolio website showcasing creative UI/UX design and product design work. Built with Next.js, React, and Tailwind CSS.
+<div align="center" style="display: flex; align-items: center; justify-content: center;">
 
-## Features
+  <img src="https://github.com/devsujandas/your-portfolio/blob/main/public/favicon.png?v=4" width="90" alt="Sujan Logo" style="margin-right: 8px;" />
 
-- **Responsive Design** - Fully optimized for mobile, tablet, and desktop screens
-- **Dark Mode Support** - Seamless theme switching with system preference detection
-- **Modern Components** - Built with shadcn/ui component library
-- **Blog System** - Markdown-based blog with dynamic routing
-- **Case Studies** - Detailed project case studies with rich media
-- **Services Showcase** - Display your services and expertise
-- **Contact Form** - Get in touch section for potential clients
-- **Performance Optimized** - Built with Next.js for optimal performance and SEO
+  <div style="margin-left: 8px;">
+    <h1>Sujan Portfolio</h1>
+    <p>
+      A modern, high-performance and fully responsive portfolio website showcasing creative UI/UX and product design work.
+    </p>
+  </div>
 
-## Project Structure
-
-\`\`\`
-portfolio/
-├── app/                           # Next.js App Router
-│   ├── about/                    # About page
-│   ├── blog/                     # Blog listing and posts
-│   ├── case-study/               # Case study pages
-│   ├── contact/                  # Contact page
-│   ├── services/                 # Services page
-│   ├── work/                     # Work portfolio page
-│   ├── layout.tsx                # Root layout
-│   ├── page.tsx                  # Home page
-│   ├── globals.css               # Global styles
-│   └── not-found.tsx             # 404 page
-├── components/                    # React components
-│   ├── ui/                       # shadcn/ui components
-│   ├── hero.tsx                  # Hero section
-│   ├── navbar.tsx                # Navigation bar
-│   ├── footer.tsx                # Footer component
-│   ├── featured-projects.tsx     # Projects showcase
-│   ├── services.tsx              # Services section
-│   ├── skills.tsx                # Skills section
-│   ├── experience.tsx            # Experience timeline
-│   ├── cta-section.tsx           # Call-to-action section
-│   ├── theme-provider.tsx        # Theme configuration
-│   └── theme-toggle.tsx          # Dark mode toggle
-├── hooks/                        # Custom React hooks
-│   ├── use-mobile.ts             # Mobile detection hook
-│   └── use-toast.ts              # Toast notification hook
-├── lib/                          # Utility functions
-│   └── utils.ts                  # Helper functions
-├── public/                       # Static assets
-│   ├── favicon.jpeg              # Site favicon
-│   ├── data/                     # JSON data files
-│   │   ├── blogs.json            # Blog posts data
-│   │   ├── projects.json         # Projects data
-│   │   └── services.json         # Services data
-│   └── images/                   # Images and graphics
-├── styles/                       # Additional styles
-│   └── globals.css               # Global stylesheet
-├── next.config.mjs               # Next.js configuration
-├── tsconfig.json                 # TypeScript configuration
-├── package.json                  # Dependencies
-├── postcss.config.mjs            # PostCSS configuration
-├── README.md                     # This file
-└── LICENSE                       # License file
-\`\`\`
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js 18+ 
-- npm or pnpm
-
-### Installation
-
-1. **Clone the repository**
-   \`\`\`bash
-   git clone <repository-url>
-   cd portfolio
-   \`\`\`
-
-2. **Install dependencies**
-   \`\`\`bash
-   npm install
-   # or
-   pnpm install
-   \`\`\`
-
-3. **Run development server**
-   \`\`\`bash
-   npm run dev
-   # or
-   pnpm dev
-   \`\`\`
-
-4. **Open your browser**
-   Navigate to [http://localhost:3000](http://localhost:3000)
-
-## Usage
-
-### Adding Blog Posts
-
-1. Create a new markdown file in the blog data or add to `public/data/blogs.json`
-2. Update the blog page to fetch and display your content
-3. Posts will automatically generate routes based on slugs
-
-### Adding Projects
-
-1. Update `public/data/projects.json` with your project information
-2. Create detailed case study pages in `app/case-study/[id]/`
-3. Upload project images to `public/images/`
-
-### Customizing Content
-
-- **Hero Section** - Edit `components/hero.tsx`
-- **Services** - Update `public/data/services.json`
-- **Experience** - Modify `components/experience.tsx`
-- **Contact Info** - Update `components/footer.tsx` and `app/contact/page.tsx`
-
-### Theme Customization
-
-Global styles and theme variables are configured in:
-- `app/globals.css` - Color scheme and design tokens
-- `components/theme-provider.tsx` - Theme provider setup
-- `components/theme-toggle.tsx` - Dark mode toggle component
-
-## Technologies Used
-
-- **Next.js 16** - React framework with App Router
-- **React 19** - UI library
-- **TypeScript** - Type-safe development
-- **Tailwind CSS v4** - Utility-first CSS framework
-- **shadcn/ui** - High-quality React components
-- **Vercel Analytics** - Performance monitoring
-- **next-themes** - Theme management
-
-## Building for Production
-
-\`\`\`bash
-npm run build
-# or
-pnpm build
-\`\`\`
-
-The build output will be stored in the `.next` directory.
-
-## Deployment
-
-### Deploy on Vercel (Recommended)
-
-1. Push your code to GitHub
-2. Import the repository on [Vercel](https://vercel.com)
-3. Configure environment variables if needed
-4. Click deploy
-
-### Deploy Elsewhere
-
-The project can be deployed on any platform that supports Next.js:
-- Netlify
-- AWS Amplify
-- DigitalOcean
-- Self-hosted servers
-
-## Performance
-
-This portfolio is optimized for performance with:
-- Image optimization through Next.js Image component
-- Code splitting and lazy loading
-- CSS-in-JS with Tailwind CSS
-- Server-side rendering for better SEO
-
-## Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Author
-
-**Sujan** - Creative UI/UX Designer & Product Designer
-
-For more information and to see the live portfolio, visit the deployed site.
-
-## Support
-
-If you have any questions or need help, please open an issue or contact through the contact page.
+</div>
+```
 
 ---
 
-**Made with ❤️ using Next.js and Vercel**
+##  Live Demo
+
+🔗 **Portfolio Website**: [https://sujandas.info](https://sujandas.info)
+
+---
+
+##  Preview
+
+![Portfolio Preview](./public/images/preview.png)
+
+---
+
+##  Overview
+
+This **Personal Portfolio Website** is built with **Next.js, React, TypeScript, and Tailwind CSS v4** to showcase work, services, case studies and blog content.
+
+Designed for performance, clarity and strong visual identity, it delivers a smooth browsing experience across all devices.
+
+---
+
+##  Key Features
+
+* **Modern & minimal UI/UX**
+* **Fully responsive** on all screen sizes
+* **Dark / Light / System theme support**
+* Built with **shadcn/ui** components
+* **Markdown-based Blog System**
+* **Case Study pages** with rich content
+* **Services & Skills showcase**
+* **Framer Motion based animations**
+* SEO & Performance optimized by **Next.js**
+* **Contact form for client inquiries**
+* Clean & scalable code structure
+
+---
+
+##  Tech Stack
+
+* **Next.js 16**
+* **React 19**
+* **TypeScript**
+* **Tailwind CSS v4**
+* **shadcn/ui**
+* **Framer Motion**
+* **Vercel Analytics**
+* **Next Themes**
+
+---
+
+##  Installation & Setup
+
+```bash
+# Clone the repository
+git clone <repository-url>
+cd portfolio
+
+# Install dependencies
+npm install
+# or
+pnpm install
+
+# Start development server
+npm run dev
+```
+
+Open in browser:
+
+```
+http://localhost:3000
+```
+
+---
+
+##  Project Structure
+
+```
+portfolio/
+├── app/
+│   ├── about/
+│   ├── blog/
+│   ├── case-study/
+│   ├── contact/
+│   ├── services/
+│   ├── work/
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── not-found.tsx
+│   └── page.tsx
+│
+├── components/
+│   ├── ui/
+│   ├── hero.tsx
+│   ├── navbar.tsx
+│   ├── footer.tsx
+│   ├── featured-projects.tsx
+│   ├── services.tsx
+│   ├── skills.tsx
+│   ├── experience.tsx
+│   ├── cta-section.tsx
+│   ├── theme-provider.tsx
+│   └── theme-toggle.tsx
+│
+├── hooks/
+│   ├── use-mobile.ts
+│   └── use-toast.ts
+│
+├── public/
+│   ├── favicon.jpeg
+│   ├── data/
+│   │   ├── blogs.json
+│   │   ├── projects.json
+│   │   └── services.json
+│   └── images/
+│
+├── lib/
+│   └── utils.ts
+│
+├── next.config.mjs
+├── tsconfig.json
+├── package.json
+├── postcss.config.mjs
+└── LICENSE
+```
+
+---
+
+##  Deployment
+
+Recommended platforms:
+
+* **Vercel (Best)**
+* Netlify
+* AWS Amplify
+* Cloudflare Pages
+
+Simply connect your GitHub repo and deploy.
+
+---
+
+##  License
+
+This project is licensed under the **MIT License**.
+See the `LICENSE` file for more details.
+
+---
+
+##  Author
+
+<div align="center">
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/devsujandas)
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF2D20?style=for-the-badge\&logo=About.me\&logoColor=white)](https://sujandas.info)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge\&logo=instagram\&logoColor=white)](https://instagram.com/devsujandas)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge\&logo=linkedin\&logoColor=white)](https://linkedin.com/in/devsujandas)
+
+</div>
+
+<div align="center">
+Thank you for exploring WearoFit! Feel free to star the repository or share feedback.
+</div>
+
+
